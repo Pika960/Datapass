@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Datapass</string>
+    <string name="app_version">Version 1.0.0</string>
+    <string name="company_name">Gabriel Daenner Medien</string>
+    <string name="msg_error_url">An error occurred while loading the requested URL.</string>
+    <string name="menu_aboutApp">About App</string>
+    <string name="menu_closeApp">Close App</string>
+    <string name="menu_reloadPage">Reload Page</string>
+    <string name="copyright_info">© 2019</string>
+</resources>

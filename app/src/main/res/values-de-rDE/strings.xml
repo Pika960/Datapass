@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Datapass</string>
+    <string name="app_version">Version 1.0.0</string>
+    <string name="company_name">Gabriel Daenner Medien</string>
+    <string name="copyright_info">© 2019</string>
+    <string name="menu_aboutApp">Über diese App</string>
+    <string name="menu_closeApp">Beenden</string>
+    <string name="menu_reloadPage">Seite neu laden</string>
+    <string name="msg_error_url">Es ist ein Fehler beim Laden der angeforderten URL aufgetreten.</string>
+</resources>
