@@ -1,18 +1,25 @@
 package de.gabrieldaennermedien.datapass;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-public class MainActivity extends AppCompatActivity
-{
+public class MainActivity extends AppCompatActivity {
     //private instances
-    private WebView webView;
+    private ProgressBar        progressBar;
+    private SwipeRefreshLayout swipeRefresh;
+    private WebView            webView;
 
     /**
      * {@inheritDoc}
@@ -22,10 +29,44 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_main);
 
-        webView = findViewById(R.id.webview);
+        progressBar  = findViewById(R.id.progressbar);
+        swipeRefresh = findViewById(R.id.swiperefresh);
+        webView      = findViewById(R.id.webview);
+
+        progressBar.setMax(100);
+
+        swipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                webView.reload();
+            }
+        });
+
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(true);
-        webView.setWebViewClient(new WebViewClient());
+
+        webView.setWebChromeClient(new WebChromeClient() {
+            @Override
+            public void onProgressChanged(WebView view, int newProgress) {
+                super.onProgressChanged(view, newProgress);
+                progressBar.setProgress(newProgress);
+            }
+        });
+
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                progressBar.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                progressBar.setVisibility(View.GONE);
+                swipeRefresh.setRefreshing(false);
+            }
+        });
     }
 
     /**
@@ -57,12 +98,11 @@ public class MainActivity extends AppCompatActivity
      * {@inheritDoc}
      */
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
         if(id == R.id.action_reloadPage) {
-            if(webView != null)
-            {
+            if(webView != null) {
                 webView.reload();
             }
 
