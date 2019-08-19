@@ -1,10 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Datapass</string>
     <string name="app_version">Version 1.1.0</string>
+    <string name="button_negative">Cancel</string>
+    <string name="button_positive">Okay</string>
     <string name="company_name">Gabriel Daenner Medien</string>
-    <string name="msg_error_url">An error occurred while loading the requested URL.</string>
+    <string name="copyright_info">© 2019</string>
+    <string name="dialog_addBalance_hint">123456789</string>
+    <string name="dialog_addBalance_msg">Cashcode:</string>
+    <string name="dialog_addBalance_title">Add balances to account</string>
+    <string name="dialog_checkBalance_title">Current balances</string>
+    <string name="dialog_device_not_supported_msg">Android Oreo or higher is required for this feature</string>
+    <string name="dialog_device_not_supported_title">Device not supported</string>
+    <string name="dialog_emptyInput_msg">Your input is empty. Operation canceled.</string>
+    <string name="dialog_emptyInput_title">Empty Input</string>
+    <string name="dialog_ussd_failed_msg">Error while performing USSD request.</string>
+    <string name="dialog_ussd_failed_title">USSD Error</string>
     <string name="menu_aboutApp">About App</string>
+    <string name="menu_addBalance">Add balance</string>
+    <string name="menu_checkBalance">Check balance</string>
     <string name="menu_closeApp">Close App</string>
     <string name="menu_reloadPage">Reload Page</string>
-    <string name="copyright_info">© 2019</string>
+    <string name="msg_error_url">An error occurred while loading the requested URL.</string>
 </resources>

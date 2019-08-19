@@ -6,8 +6,18 @@
     tools:context=".MainActivity">
 
     <item
-        android:id="@+id/action_reloadPage"
+        android:id="@+id/action_checkBalance"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/menu_checkBalance"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_addBalance"
         android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/menu_addBalance"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_reloadPage"
+        android:icon="@android:drawable/ic_menu_upload"
         android:title="@string/menu_reloadPage"
         app:showAsAction="never" />
     <item
