@@ -14,6 +14,7 @@
     <string name="dialog_device_not_supported_title">Device not supported</string>
     <string name="dialog_emptyInput_msg">Ihre Eingabe ist leer. Vorgang abgebrochen.</string>
     <string name="dialog_emptyInput_title">Leere Eingabe</string>
+	<string name="dialog_ussd_emptyResponse_msg">Keine Informationen vom Anbieter erhalten.</string>
     <string name="dialog_ussd_failed_msg">Fehler beim Ausführen der USSD-Anfrage.</string>
     <string name="dialog_ussd_failed_title">USSD Fehler</string>
     <string name="menu_aboutApp">Über diese App</string>

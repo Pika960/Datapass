@@ -212,7 +212,12 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onReceiveUssdResponse(TelephonyManager telephonyManager, String request, CharSequence response) {
                         super.onReceiveUssdResponse(telephonyManager, request, response);
-                        showInfoAlert(getString(R.string.dialog_checkBalance_title), response.toString());
+
+                        if (response.toString().length() > 1) {
+                            showInfoAlert(getString(R.string.dialog_checkBalance_title), response.toString());
+                        } else {
+                            showInfoAlert(getString(R.string.dialog_checkBalance_title), getString(R.string.dialog_ussd_emptyResponse_msg));
+                        }
                     }
 
                     @Override

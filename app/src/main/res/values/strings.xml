@@ -14,6 +14,7 @@
     <string name="dialog_device_not_supported_title">Device not supported</string>
     <string name="dialog_emptyInput_msg">Your input is empty. Operation canceled.</string>
     <string name="dialog_emptyInput_title">Empty Input</string>
+	<string name="dialog_ussd_emptyResponse_msg">No information received from the provider.</string>
     <string name="dialog_ussd_failed_msg">Error while performing USSD request.</string>
     <string name="dialog_ussd_failed_title">USSD Error</string>
     <string name="menu_aboutApp">About App</string>
