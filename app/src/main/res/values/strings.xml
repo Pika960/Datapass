@@ -19,6 +19,7 @@
     <string name="menu_aboutApp">About App</string>
     <string name="menu_addBalance">Add balance</string>
     <string name="menu_checkBalance">Check balance</string>
+    <string name="menu_checkInclusiveMinutes">Check inclusive minutes</string>
     <string name="menu_closeApp">Close App</string>
     <string name="menu_reloadPage">Reload Page</string>
     <string name="msg_error_url">An error occurred while loading the requested URL.</string>

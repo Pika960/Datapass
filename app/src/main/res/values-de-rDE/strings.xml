@@ -19,6 +19,7 @@
     <string name="menu_aboutApp">Über diese App</string>
     <string name="menu_addBalance">Guthaben hinzufügen</string>
     <string name="menu_checkBalance">Guthaben abfragen</string>
+    <string name="menu_checkInclusiveMinutes">Inklusivminuten abfragen</string>
     <string name="menu_closeApp">Beenden</string>
     <string name="menu_reloadPage">Seite neu laden</string>
     <string name="msg_error_url">Es ist ein Fehler beim Laden der angeforderten URL aufgetreten.</string>

@@ -129,6 +129,16 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.action_checkInclusiveMinutes) {
+            if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CALL_PHONE}, 1);
+            } else {
+                doUSSDRequest("*100*3#");
+            }
+
+            return true;
+        }
+
         if (id == R.id.action_addBalance) {
             if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CALL_PHONE}, 1);
