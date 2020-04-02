@@ -15,7 +15,7 @@ local machine for development and testing purposes.
 
 * Git
 * Java
-* Android Studio 3.4 (or later)
+* Android Studio 3.6 (or later)
 
 ### How to start the project
 
