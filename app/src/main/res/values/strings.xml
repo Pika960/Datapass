@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Datapass</string>
-    <string name="app_version">Version 1.1.0</string>
+    <string name="app_version">Version 1.2.0</string>
     <string name="button_negative">Cancel</string>
     <string name="button_positive">Okay</string>
     <string name="company_name">Gabriel Daenner Medien</string>
@@ -14,7 +14,7 @@
     <string name="dialog_device_not_supported_title">Device not supported</string>
     <string name="dialog_emptyInput_msg">Your input is empty. Operation canceled.</string>
     <string name="dialog_emptyInput_title">Empty Input</string>
-	<string name="dialog_ussd_emptyResponse_msg">No information received from the provider.</string>
+    <string name="dialog_ussd_emptyResponse_msg">No information received from the provider.</string>
     <string name="dialog_ussd_failed_msg">Error while performing USSD request.</string>
     <string name="dialog_ussd_failed_title">USSD Error</string>
     <string name="menu_aboutApp">About App</string>
