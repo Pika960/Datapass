@@ -28,6 +28,11 @@
 
     <group android:id="@+id/group_pageManipulation">
         <item
+            android:id="@+id/action_loadMainPage"
+            android:icon="@android:drawable/ic_menu_upload"
+            android:title="@string/menu_loadMainPage"
+            app:showAsAction="never" />
+        <item
             android:id="@+id/action_reloadPage"
             android:icon="@android:drawable/ic_menu_upload"
             android:title="@string/menu_reloadPage"

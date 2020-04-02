@@ -152,6 +152,16 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.action_loadMainPage) {
+            try {
+                webView.loadUrl("https://datapass.de/");
+            } catch (Exception exc) {
+                Toast.makeText(MainActivity.this, getString(R.string.msg_error_url), Toast.LENGTH_LONG).show();
+            }
+
+            return true;
+        }
+
         if (id == R.id.action_reloadPage) {
             if (webView != null) {
                 webView.reload();
